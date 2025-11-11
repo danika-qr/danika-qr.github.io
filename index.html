@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ran (Danika) Qiu — Personal Website</title>
+  <meta name="description" content="Ran (Danika) Qiu — CS/AI/ML + RL researcher. Data attribution for RLHF. PhD applicant.">
+  <meta name="author" content="Ran Qiu">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0ea5e9;--card:#f8fafc;--line:#e2e8f0;
+      --accent:#14b8a6;--badge-bg:#ecfeff;--badge-text:#0e7490;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0b1020;--text:#e5e7eb;--muted:#94a3b8;--link:#38bdf8;--card:#0f172a;--line:#1f2937;--badge-bg:#06252b;--badge-text:#67e8f9}
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;gap:20px;padding:28px 0 8px}
+    .avatar{width:88px;height:88px;border-radius:16px;object-fit:cover;border:1px solid var(--line);background:var(--card)}
+    .title h1{margin:0;font-size:28px;letter-spacing:.2px}
+    .title p{margin:4px 0 0;color:var(--muted)}
+    nav{border-top:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
+    .tabs{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}
+    .tabs a{padding:8px 12px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:14px}
+    .tabs a:hover{border-color:var(--link);color:var(--link)}
+    section { padding:28px 0; border-bottom:1px solid var(--line); scroll-margin-top: 70px; }
+    section:last-of-type{border-bottom:none}
+    h2{font-size:20px;margin:0 0 14px}
+    .lead{font-size:16px;color:var(--muted);line-height:1.6}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+    .card h3{margin:0 0 6px;font-size:16px}
+    .meta{color:var(--muted);font-size:13px}
+    a{color:var(--link)}
+    .btn{display:inline-block;margin-top:10px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--text)}
+    .btn:hover{border-color:var(--link);color:var(--link)}
+    .badge{display:inline-flex;align-items:center;gap:6px;background:var(--badge-bg);color:var(--badge-text);border-radius:999px;padding:4px 10px;font-size:12px;border:1px solid var(--line)}
+    .list{display:flex;flex-direction:column;gap:12px}
+    .pub{display:grid;grid-template-columns:auto 1fr;gap:8px}
+    .pub .year{width:56px; color:var(--muted)}
+    .pub .entry{line-height:1.5}
+    .pub .authors{color:var(--muted)}
+    .kicker{font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+    footer{padding:24px 0;color:var(--muted);font-size:14px}
+    .social a{margin-right:12px}
+    .two-col{columns:2;column-gap:20px}
+    @media (max-width:840px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      .two-col{columns:1}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ran (Danika) Qiu",
+    "url": "https://danika-qr.github.io",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Michigan / Shanghai Jiao Tong University"
+    },
+    "sameAs": [
+      "https://github.com/danika-qr"
+    ],
+    "jobTitle": "Researcher (PhD Applicant)",
+    "knowsAbout": ["Machine Learning","Reinforcement Learning","Large Language Models","Data Attribution","RLHF"]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="./profile.JPG" alt="Ran Qiu" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'88\' height=\'88\'%3E%3Crect width=\'100%25\' height=\'100%25\' rx=\'16\' fill=\'%23f1f5f9\'/%3E%3Ctext x=\'50%25\' y=\'54%25\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'28\' fill=\'%2394a3b8\'%3ERQ%3C/text%3E%3C/svg%3E'">
+      <div class="title">
+        <h1>Ran (Danika) Qiu</h1>
+        <p>CS/AI/ML — Reinforcement Learning • LLMs • Data Attribution</p>
+        <div class="social">
+          <a href="#" id="emailLink">ranqiu@umich.edu</a> ·
+          <a href="https://github.com/danika-qr" target="_blank" rel="noreferrer">GitHub</a> ·
+          <a href="/cv.pdf" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="tabs">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="about">
+      <span class="kicker">About</span>
+      <h2>Hi! I'm Ran. You can call me Ran or Danika. Nice to see you!</h2>
+      <p class="lead">
+        I'm a senior at the University of Michigan-Ann Arbor and Shanghai Jiao Tong University, pursuing dual B.S.E. in Computer Science and Mechanical Engineering. I am currently applying for PhD programs.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Interests</h3>
+          <p>Machine Learning, Reinforcement Learning, LLM Alignment, Data Attribution.</p>
+          <div class="badge" title="Actively seeking Fall 2026 PhD">🎓 PhD 2026 — Open to advisors</div>
+        </div>
+        <div class="card">
+          <h3>Affiliations</h3>
+          <p>University of Michigan · Shanghai Jiao Tong University.</p>
+          <p class="meta">Previously: TA — Linear Algebra; TA — Academic English Writing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+        <span class="kicker">News</span>
+        <div class="list">
+        <div class="card">
+        <h3>Oct 2025 — COLM Workshop Outstanding Paper Award</h3>
+        <p class="meta">Our paper “Beyond Blind Following: Evaluating Robustness of LLM Agents under Imperfect Guidance” received the Outstanding Paper Award at the COLM 2025 Workshop on AI Agents: Capabilities and Safety.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <span class="kicker">Research</span>
+        <h2>Research Experience</h2>
+        <div class="list">
+        <div class="card">
+        <h3>Research Assistant — Jiaqi Ma's Lab, University of Illinois Urbana-Champaign</h3>
+        <p class="meta">Urbana-Champaign, IL, USA · May 2025 - present</p>
+        <ul>
+        <li>Conducting reinforcement learning attribution for large language models using a lightweight RL environment (TinyZero) to analyze the contribution of training samples to policy updates.</li>
+        <li>Implementing and evaluating both offline and online methods for tracing data influence in RLHF-style training.</li>
+        <li>Designing experiments to compare attribution accuracy and computational efficiency across PPO and GRPO frameworks, aiming to improve interpretability and data selection in LLM training.</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>Research Assistant — Honglak Lee's Lab, University of Michigan</h3>
+        <p class="meta">Ann Arbor, MI, USA · Dec 2024 - present</p>
+        <ul>
+        <li>Co-developed <strong>MIRAGE</strong>, a benchmark suite for evaluating robustness of LLM agents under imperfect guidance, spanning simulated and real-world domains (navigation, cooking, gaming, and web tasks).</li>
+        <li>Implemented procedurally generated environments and automated perturbation pipelines to inject controlled guidance imperfections, ensuring tasks remain solvable while revealing critical failure modes.</li>
+        <li>Conducted large-scale evaluations of GPT-4 and open-source LLMs across ReAct, Plan-and-Solve, and Reflexion frameworks, identifying key robustness gaps.</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>Participation in Research Program — Shanghai Jiao Tong University</h3>
+        <p class="meta">School of Marine and Architectural Engineering · Shanghai, China · Feb - Oct 2024</p>
+        <ul>
+        <li>Assisted in developing MATLAB-based numerical simulations for horizontal-launch dynamics of powered natural supercavitating vehicles, incorporating coupled nonlinear motion equations and hydrodynamic models.</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>Undergraduate Research Project — SJTU Joint Institute</h3>
+        <p class="meta">Shanghai, China · Feb - Aug 2024</p>
+        <ul>
+        <li>Explored ML approaches (XGBoost, utility-function optimization, genetic algorithm) to predict properties of halide solid-state electrolytes; gained hands-on experience with applied ML modeling.</li>
+        </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <span class="kicker">Publications &amp; Preprints</span>
+        <h2>Selected</h2>
+        <div class="list">
+        <div class="pub">
+        <div class="year">2025</div>
+        <div class="entry">
+        <strong>Beyond Blind Following: Evaluating Robustness of LLM Agents under Imperfect Guidance.</strong><br/>
+        <span class="authors">Yao Fu, <strong>Ran Qiu</strong>, Xinhe Wang, Jacob Sansom, Sathvika Ayyappa Prabhu, Huijie Tang, Jaekyeom Kim, Sungryull Sohn, and Honglak Lee.</span><br/>
+        <span class="meta">Proceedings of the COLM 2025 Workshop on AI Agents: Capabilities and Safety, 2025. <strong>Outstanding Paper Award</strong>.</span>
+        </div>
+        </div>
+        <div class="pub">
+        <div class="year">2025</div>
+        <div class="entry">
+        <strong>Numerical Study of Horizontal Launch Free Motions of Powered Natural Supercavitating Vehicles.</strong><br/>
+        <span class="authors">Wang Zou, Hanyu Gan, and <strong>Ran Qiu</strong>.</span><br/>
+        <span class="meta">Journal of Fluids Engineering, 147(6), 061403, 2025.</span>
+        </div>
+        </div>
+        </div>
+        </section>
+
+    <section id="teaching">
+      <span class="kicker">Teaching</span>
+      <div class="two-col">
+        <p><strong>Teaching Assistant</strong>, Linear Algebra — led discussions, office hours, grading (Summer 2024).</p>
+        <p><strong>Teaching Assistant</strong>, Academic English Writing — workshops on argument structure and clarity (Fall 2023).</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+        <span class="kicker">Hobbies</span>
+        <div class="list">
+        <div class="card">
+        <h3>Vocal Performance</h3>
+        <ul>
+        <li><strong>SJTU High-level Arts Troupe</strong> — Soprano. Campus and city performances; repertoire spans classical choral and contemporary arrangements.</li>
+        <li><strong>Annappella (University of Michigan)</strong> — Soprano. A cappella performances, studio recordings, and student showcases.</li>
+        </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+      <span class="kicker">Contact</span>
+      <h2>Let's chat</h2>
+      <p>Email is best: <a href="mailto:ranqiu@umich.edu">ranqiu@umich.edu</a>. I'm also on <a href="https://github.com/danika-qr" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ran (Danika) Qiu. Built with pure HTML/CSS. Last updated Nov 10, 2025.
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Click-to-copy email
+    const emailLink = document.getElementById('emailLink');
+    emailLink?.addEventListener('click', (e)=>{
+      e.preventDefault();
+      const email = 'ranqiu@umich.edu';
+      navigator.clipboard.writeText(email).then(()=>{
+        emailLink.textContent = 'Copied: '+email;
+        setTimeout(()=> emailLink.textContent = email, 1500);
+      });
+    });
+  </script>
+</body>
+</html>
